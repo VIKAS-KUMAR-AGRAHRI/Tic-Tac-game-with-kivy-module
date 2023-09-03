@@ -1,0 +1,77 @@
+<RoundedButton@Button>:
+    background_color: 0,0,0,0  # the last zero is the critical on, make invisible
+    canvas.before:
+        Color:
+            rgba: (.4,.4,.4,1) # visual feedback of press
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [50,]
+
+<Mydesign>: 
+    cols: 3 
+    rows: 3     
+    RoundedButton:
+        id:one
+        text: ''
+        background_disabled_normal:''
+        #background_color :.3,.3, 1, 1
+        on_press:root.printfun(self)
+        #border: 30, 30, 30, 30
+    RoundedButton:   
+        id:two    
+        text: ''
+        background_disabled_normal:''
+        #background_color :.3,.3, 1, 1
+        on_press:root.printfun(self)
+        #border_radius: 30, 30, 30, 30
+    RoundedButton:    
+        id:three
+        #background_color :.3,.3, 1, 1
+        background_disabled_normal:''
+        on_press:root.printfun(self) 
+        #border: 30, 30, 30, 30
+        text: ''
+    RoundedButton:
+        id:four
+        #background_color :.3,.3, 1, 1
+        background_disabled_normal:''
+        on_press:root.printfun(self) 
+        #border: 30, 30, 30, 30
+        text: ''
+    RoundedButton:
+        id:five
+        #background_color :.3,.3, 1, 1
+        background_disabled_normal:''
+        on_press:root.printfun(self) 
+        #border: 30, 30, 30, 30
+        text: ''
+    RoundedButton:     
+        id:six
+        #background_color :.3,.3, 1, 1
+        background_disabled_normal:''
+        on_press:root.printfun(self)   
+        #border: 30, 30, 30, 30
+        text: ''
+    RoundedButton:
+        id:seven
+        #background_color :.3,.3, 1, 1
+        background_disabled_normal:''
+        on_press:root.printfun(self) 
+        #border: 30, 30, 30, 30
+        text: ''
+    RoundedButton:    
+        id:eight
+        #background_color :.3,.3, 1, 1
+        background_disabled_normal:''
+        on_press:root.printfun(self) 
+        #border: 30, 30, 30, 30   
+        text: ''
+    RoundedButton:
+        id:nine
+        #background_color :.3,.3, 1, 1
+        background_disabled_normal:''
+        on_press:root.printfun(self) 
+        #border: 30, 30, 30, 30
+        text: ''
+    
